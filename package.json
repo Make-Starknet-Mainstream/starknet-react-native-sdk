@@ -1,0 +1,87 @@
+{
+  "name": "@make-starknet-mainstream/starknet-react-native-sdk",
+  "version": "0.1.0",
+  "description": "React Native SDK for Starknet blockchain",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "module": "build/index.js",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "build",
+    "app.plugin.js"
+  ],
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "eslint .",
+    "test": "jest",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "starknet",
+    "blockchain",
+    "web3",
+    "sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Make-Starknet-Mainstream/starknet-react-native-sdk.git"
+  },
+  "author": "Make Starknet Mainstream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Make-Starknet-Mainstream/starknet-react-native-sdk/issues"
+  },
+  "homepage": "https://github.com/Make-Starknet-Mainstream/starknet-react-native-sdk#readme",
+  "dependencies": {
+    "@starknet-react/core": "^2.1.0",
+    "starknet": "^5.19.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/jest": "^29.5.11",
+    "@types/react": "~18.2.45",
+    "@types/react-native": "~0.72.8",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.50.0",
+    "eslint-config-universe": "^12.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "expo-module-scripts": "^3.1.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "react": "18.2.0",
+    "react-native": "0.73.2",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "expo": ">=49.0.0",
+    "expo-secure-store": "*",
+    "expo-crypto": "*",
+    "react": ">=18.2.0",
+    "react-native": ">=0.72.0"
+  },
+  "jest": {
+    "preset": "expo-module-scripts/jest"
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "expo": {
+    "autolinking": {
+      "nativeModulesDir": "./src"
+    }
+  }
+}
