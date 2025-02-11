@@ -1,11 +1,10 @@
 import {
-  StarknetProvider,
-  useAccount,
-  useBalance,
-  useNetwork,
+    StarknetProvider,
+    useAccount,
+    useBalance,
+    useNetwork,
 } from '@make-starknet-mainstream/starknet-react-native-sdk';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 function WalletStatus() {
